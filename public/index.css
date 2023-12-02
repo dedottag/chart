@@ -114,6 +114,7 @@ h1 {
 
 @media (max-width: 600px) {
   .chart-card-container {
-    width: 300px;
+    width: 700px;
+    background-color: brown;
   }
 }
