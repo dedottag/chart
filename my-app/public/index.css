@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --brown: hsl(25, 47%, 15%);
+  --brown-medium: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --orange: hsl(33, 100%, 98%);
+
+  /* typography */
+  --family: "DM Sans";
+  --fn-base: 18px;
+  --weight-normal: 400;
+  --weight-bold: 700;
+
+  /* borders */
+  --radii: 1rem;
+}
+
+body {
+  max-width: 1445px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--cream);
+  font-family: var(--family);
+  font-size: var(--fn-base);
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  border-radius: var(--radii);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--red);
+}
+
+.balance {
+  font-size: 14px;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  /* background-color: brown; */
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+}
+
+.chart-card-container {
+  padding: 0px 30px 0px 30px;
+  max-width: 500px;
+  height: 470px;
+  background-color: var(--orange);
+  border-radius: var(--radii);
+  color: var(--brown);
+  /* background-color: brown; */
+}
+
+hr {
+  height: 1.5px;
+  border: none;
+  background-color: var(--cream);
+}
+h1 {
+  padding-top: 30px;
+  font-weight: var(--weight-bold);
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+.chart-card-footer {
+  /* background-color: aqua; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  /* margin-top: 30px; */
+}
+
+.total-wastes {
+  /* background-color: aqua; */
+  width: 150px;
+  font-size: 14px;
+  color: var(--brown-medium);
+}
+.tital-price {
+  color: var(--brown);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.total-last-moth {
+  color: var(--brown-medium);
+  width: 150px;
+}
+
+@media (max-width: 600px) {
+  .chart-card-container {
+    width: 300px;
+  }
+}
