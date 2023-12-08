@@ -24,7 +24,6 @@
 }
 
 body {
-  max-width: 1445px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -64,7 +63,7 @@ body {
 .chart-card-container {
   padding: 0px 30px 0px 30px;
   max-width: 500px;
-  height: 470px;
+  height: 430px;
   background-color: var(--orange);
   border-radius: var(--radii);
   color: var(--brown);
@@ -110,11 +109,20 @@ h1 {
 .total-last-moth {
   color: var(--brown-medium);
   width: 150px;
+  text-align: right;
 }
 
 @media (max-width: 600px) {
   .chart-card-container {
-    width: 700px;
-    background-color: brown;
+    width: 340px;
+    height: 370px;
+  }
+  h1 {
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: var(--weight-bold);
+  }
+  .tital-price {
+    font-size: 30px;
   }
 }

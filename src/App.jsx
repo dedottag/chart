@@ -33,7 +33,7 @@ function App() {
           <div className="total-last-moth">
             <span style={{ color: "hsl(25, 47%, 15%)", fontWeight: "700" }}>
               +2.4%
-            </span>{" "}
+            </span>
             <br /> from last month
           </div>
         </div>
